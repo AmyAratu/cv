@@ -2,203 +2,181 @@
 <html lang="pt-BR">
 
 <head>
-  <title>Amanda Santiago</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Amanda Santiago</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <style>
-    html, body {
-      font-family: "Roboto", sans-serif;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .light-mode {
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    .dark-mode {
-      background-color: #333;
-      color: #f4f4f4;
-    }
-
-    .theme-toggle-btn {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    .theme-toggle-btn:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif}
+        .light-mode {
+            --bg-color: #f5f5f5;
+            --text-color: #000;
+            --card-bg: #fff;
+        }
+        .dark-mode {
+            --bg-color: #333;
+            --text-color: #f5f5f5;
+            --card-bg: #444;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .w3-card-4 {
+            background-color: var(--card-bg);
+        }
+        .theme-toggle-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .theme-toggle-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
-<body class="w3-light-grey light-mode">
+<body class="light-mode">
 
-  <!-- Theme Toggle Button -->
-  <button class="theme-toggle-btn" onclick="toggleTheme()">Alterar Tema</button>
-
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-      <!-- Left Column -->
-      <div class="w3-third">
-
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-container">
-            <h2>Amanda Santiago Oliveira dos Santos</h2>
-          </div>
-          <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Desenvolvedora de software</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>São Paulo - SP</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>amandasantiago.dev@gmail.com</p>
-            <hr>
-
-            <p class="w3-large">
-              <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b>
-            </p>
-            <p>HTML</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:55%">55%</div>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle-button" onclick="toggleTheme()">Alterar Tema</button>
+  
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+  
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+  
+            <!-- Left Column -->
+            <div class="w3-third">
+  
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-container">
+                        <h2>Amanda Santiago Oliveira dos Santos</h2>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Desenvolvedora de software</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>São Paulo - SP</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>amandasantiago.dev@gmail.com</p>
+                        <hr>
+  
+                        <p class="w3-large">
+                            <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b>
+                        </p>
+                        <p>HTML</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:55%">55%</div>
+                        </div>
+                        <p>Python</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:60%">60%</div>
+                        </div>
+                        <p>C++</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:30%">30%</div>
+                        </div>
+                        <p>Java</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
+                        </div>
+                        <br>
+  
+                        <p class="w3-large w3-text-theme">
+                            <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Idiomas</b>
+                        </p>
+                        <p>Inglês</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-blue" style="height:24px;width:50%"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+  
+                <!-- End Left Column -->
             </div>
-            <p>Python</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:60%">60%</div>
+  
+            <!-- Right Column -->
+            <div class="w3-twothird">
+        
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Sobre</h2>
+                    <p>Sou formada em Análise e Desenvolvimento de Sistemas pela Anhanguera e atualmente curso Sistemas de Informação pela PUC Minas. Ao longo da minha jornada acadêmica, participei de diversas atividades e eventos, além de ter estagiado na área de robótica educacional, o que me permitiu aprimorar tanto minhas habilidades técnicas quanto minhas soft skills.</p>
+                    <p>Tenho experiência prática em linguagens como C++ e Java, além de estar familiarizada com metodologias ágeis, clean code e banco de dados. Valorizo o trabalho em equipe e estou constantemente buscando aprender e me desenvolver profissionalmente.</p>
+                    <p>Estou animada para contribuir em projetos desafiadores, onde possa aplicar meu conhecimento e continuar crescendo na área de desenvolvimento de sistemas.</p>
+                </div>
+  
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16">
+                      <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Experiências
+                    </h2>
+                    <div class="w3-container">
+                      <h5 class="w3-opacity"><b>USP - Estagiária em robótica educacional</b></h5>
+                      <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto de 2022 - Agosto de 2024</h6>
+                      <p>Responsável por criar planos de aula, desenvolver atividades relacionadas à robótica,
+                        integrando mecânica, eletrônica e programação. As aulas envolvem materiais
+                        experimentais e lúdicos, recursos artístico-midiáticos relacionados à ciência, como filmes,
+                        histórias em quadrinhos, jogos, etc. Com as esferas social, cultural e política, desde o
+                        perspectiva da educação através da investigação.</p>
+                      <hr>
+                    </div>
+                </div>
+    
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16">
+                      <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Educação
+                    </h2>
+                    <div class="w3-container">
+                      <h5 class="w3-opacity"><b>Anhanguera Educacional - Análise e desenvolvimento de sistemas</b></h5>
+                      <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Fevereiro de 2022 - Agosto de 2024</h6>
+                      <p>Adquirindo as seguintes competências: Scrum · Interface de programação de aplicativos (API) · Desenvolvimento de software · Mockito · PaaS (Plataforma como serviço) · Spring Boot · Analítica de dados · Algoritmos · Git · Raciocínio lógico · Sistemas operacionais · Ciência de dados · Tecnologia da informação · Apresentações · Desenvolvimento de sistemas · Kotlin · PySpark · Computação em nuvem · Linguagens de programação · SQL · JUnit · Desenvolvimento de soluções · HTML</p>
+                    </div>
+                    <div class="w3-container">
+                      <h5 class="w3-opacity"><b>PUC MINAS - Bacharelado de sistemas de informação</b></h5>
+                      <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Agosto de 2024 - Agosto de 2028</h6>
+                      <p>No curso de S.I da PUC Minas trabalhamos por meio de competências, sendo assim, todo semestre os alunos desenvolvem projetos práticos com base nos conteúdos teóricos fornecidos pelos professores.</p>
+                    </div>
+                    <div class="w3-container">
+                      <h5 class="w3-opacity"><b>Digital Innovation One (DIO) - Cursos Complementares</b></h5>
+                      <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Outubro de 2023 - Janeiro de 2024</h6>
+                      <p>Cursos realizados: Bootcamp de Desenvolvimento de Software · Data Science · Desenho de Arquitetura de Software · Arquitetura de Microserviços · Java · Python · Desenvolvimento Web · SQL · Python para Data Science · Análise de Dados · Git e GitHub · Spring Boot · Banco de Dados · JavaScript · Front-end · Back-end · APIs · DevOps · Docker</p>
+                    </div>
+                </div>
             </div>
-            <p>C++</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:30%">30%</div>
-            </div>
-            <p>Java</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
-            </div>
-            <br>
-
-            <p class="w3-large w3-text-theme">
-              <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Idiomas</b>
-            </p>
-            <p>Inglês</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-blue" style="height:24px;width:50%"></div>
-            </div>
-            <br>
-          </div>
         </div>
-        <br>
-        <!-- End Left Column -->
-      </div>
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Sobre</h2>
-          <p>Sou formada em Análise e Desenvolvimento de Sistemas pela Anhanguera e atualmente curso Sistemas de Informação pela PUC Minas. Ao longo da minha jornada acadêmica, participei de diversas atividades e eventos, além de ter estagiado na área de robótica educacional, o que me permitiu aprimorar tanto minhas habilidades técnicas quanto minhas soft skills.
-
-            Tenho experiência prática em linguagens como C++ e Java, além de estar familiarizada com metodologias ágeis, clean code e banco de dados. Valorizo o trabalho em equipe e estou constantemente buscando aprender e me desenvolver profissionalmente.
-
-            Estou animada para contribuir em projetos desafiadores, onde possa aplicar meu conhecimento e continuar crescendo na área de desenvolvimento de sistemas.</p>
-        </div>
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Experiências
-          </h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>USP - Estagiária em robótica educacional</b></h5>
-            <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto de 2022 - Agosto de 2024</h6>
-            <p>Responsável por criar planos de aula, desenvolver atividades relacionadas à robótica, integrando mecânica, eletrônica e programação. As aulas envolvem materiais experimentais e lúdicos, recursos artístico-midiáticos relacionados à ciência, como filmes, histórias em quadrinhos, jogos, etc. Com as esferas social, cultural e política, desde o perspectiva da educação através da investigação.</p>
-            <hr>
-          </div>
-        </div>
-
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Educação
-          </h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Anhanguera Educacional - Análise e desenvolvimento de sistemas</b></h5>
-            <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Fevereiro de 2022 - Agosto de 2024</h6>
-            <p>Adquirindo as seguintes competências: Scrum · Interface de programação de aplicativos (API) · Desenvolvimento de software · Mockito · PaaS (Plataforma como serviço) · Spring Boot · Analítica de dados · Algoritmos · Git · Raciocínio lógico · Sistemas operacionais · Ciência de dados · Tecnologia da informação · Apresentações · Desenvolvimento de sistemas · Kotlin · PySpark · Computação em nuvem · Linguagens de programação · SQL · JUnit · Desenvolvimento de soluções · HTML</p>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>PUC MINAS - Bacharelado de sistemas de informação</b></h5>
-            <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Agosto de 2024 - Agosto de 2028</h6>
-            <p>No curso de S.I da PUC Minas trabalhamos por meio de competências, sendo assim, todo semestre os alunos desenvolvem projetos práticos com base nos conteúdos teóricos fornecidos pelos professores.</p>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Digital Innovation One (DIO) - Cursos Complementares</b></h5>
-            <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Fevereiro de 2022 - <span class="w3-tag w3-blue w3-round">Atualmente</span></h6>
-            <p>Maior plataforma de educação aberta em TI da América Latina, com mais de 1 milhão de usuários. A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:</p>
-            <ul>
-              <li><a href="https://www.dio.me/certificate/6213111D" target="_blank">Curso: Lógica Condicional e Controle de Fluxos em Java (2h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/XDRA3SQM.pdf" target="_blank">Curso: Introdução Ao Mundo Dos Objetos (1h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/8VGVL6CS.pdf" target="_blank">Curso: Príncipios do Git e Github (1h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/Y65BSBXG.pdf" target="_blank">Curso: Introdução ao Mundo da Inteligência Artificial (IA) Generativa(1h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/V8ZWA3YE.pdf" target="_blank">Curso: Primeiros Passos no Mundo da Inteligência Artificial (IA) (2h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/QGKM8IFF.pdf" target="_blank">Curso: Aplicações e Impacto da IA no Mundo Atual (1h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/MNM6PKRC.pdf" target="_blank">Curso: Amazon Bedrock: A Nova Era da Inteligência Artificial Generativa (2h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/M7IDEARQ.pdf" target="_blank">Curso: Dominando IA Generativa com Claude 3 no Amazon Bedrock (2h)</a></li>
-              <li><a href="https://hermes.dio.me/certificates/CPZ5VEL9.pdf" target="_blank">Curso: Amazon Q: IA Generativa como Copiloto de Programação Python (2h)</a></li>
-            </ul>
-            <hr>
-          </div>
-        </div>
-
-        <!-- End Right Column -->
-      </div>
-
-      <!-- End Grid -->
     </div>
 
-    <!-- End Page Container -->
-  </div>
+    <script>
+        function toggleTheme() {
+            var currentTheme = document.body.className;
+            if (currentTheme === 'light-mode') {
+                document.body.className = 'dark-mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.className = 'light-mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
 
-  <footer class="w3-container w3-blue w3-center w3-margin-top">
-    <p>Minhas Redes Sociais</p>
-    <a href="https://github.com/AmyAratu" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/amanda-santiago-737436233/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
-
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      if (body.classList.contains('light-mode')) {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark-mode');
-      } else {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-        localStorage.setItem('theme', 'light-mode');
-      }
-    }
-
-    // Apply the saved theme on page load
-    document.addEventListener('DOMContentLoaded', () => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        document.body.classList.remove('light-mode', 'dark-mode');
-        document.body.classList.add(savedTheme);
-      }
-    });
-  </script>
-
+        // Load the theme from localStorage on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.body.className = savedTheme + '-mode';
+            }
+        });
+    </script>
 </body>
 </html>
